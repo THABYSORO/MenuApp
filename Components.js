@@ -20,7 +20,7 @@ export default function Contact({name, totalAmount, setTotalAmount, Amount, pict
         source={picture} />
       <View style={styles.details}>
         <Text style={styles.name}>{name}</Text>
-        <Text>Price: {Amount}</Text>
+        <Text>Price M:{Amount}</Text>
         <Button title="Add" onPress={increase} />
         <Text>Quantity: {count}</Text>
         <Button title="Remove" onPress={decrease} />
@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
     margin: 20,
     padding: 10,
     flexDirection: 'row',
-    borderWidth: 1,
+    borderWidth: 3,
+    
     borderColor: '#999',
     borderRadius: 10,
   },
